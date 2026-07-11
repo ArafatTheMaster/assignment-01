@@ -203,248 +203,255 @@
 
 
 
-.price-section {
-    margin: 80px auto 80px auto;
-}
+    .price-section {
+        margin: 80px auto 80px auto;
+    }
 
-.price-section h2 {
+    .price-section h2 {
+        
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .price-section p {
+        text-align: center;
+        padding: 10px 0;
+        margin-bottom: 20px;
+    }
+
+    .price-card {
+        margin-top: 45px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 50px;
+    }
+
+    .price-card .card {
+        outline: 1px solid #cfcccc;
+        padding: 25px;
+        border-radius: 12px;
+        transition: 0.3s;
+    }
+
+    .price-card .card:hover{
+        transform: scale(1.05);
+    }
+
+    .price-card .card p {
+        text-align:  left;
+        font-size: 16px;
+    }
+
+    .price-card .card h3 {
+        font-size: 55px;
+    }
+
+    .price-card .card hr {
+        margin-top: 12px;
+    }
+
+    .price-card .card ul {
+        margin: 15px 0 15px 20px;
+        display: grid;
+        gap: 20px;
+    }
+
+    .price-card .card li {
+        font-size: 20px;
+    }
+
+    .price-card .card button {
+        background-color: #fff;
+        color: #2563EB;
+        width: 100%;
+        padding: 15px 0;
+        border: none;
+        outline: 0.5px solid #99bed1;
+        border-radius: 4px;
+    }
+
+    .price-card .card button:hover {
+        background-color: #e8e8e9;
+    }
+
+    .price-card .highlight-card {
+        background-color: #0D1B2A;
+    }
+
+    .price-card .highlight-card p,
+    .price-card .highlight-card h3,
+    .price-card .highlight-card small,
+    .price-card .highlight-card li {
+        color: white;
+    }
+
+    .price-card .highlight-card button {
+        background-color: #2563EB;
+        color: white;
+        outline: none;
+    }
+
+    .price-card .highlight-card button:hover {
+        background-color: #2854b4;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
     
-    text-align: center;
-    font-size: 40px;
-}
 
-.price-section p {
-    text-align: center;
-    padding: 10px 0;
-    margin-bottom: 20px;
-}
+    /* ===== AI section Subscribe Section ===== */
+    .subscribe-section {
+        position: relative;
+        background: #0D1B2A;
+        padding: 100px 0;
+        overflow: hidden;
+        isolation: isolate;
+    }
 
-.price-card {
-    margin-top: 45px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 50px;
-}
+    .subscribe-section::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image:
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        background-size: 40px 40px;
+        mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+        z-index: 0;
+    }
 
-.price-card .card {
-    outline: 1px solid #cfcccc;
-    padding: 25px;
-    border-radius: 12px;
-    transition: 0.3s;
-}
+    #particle-canvas {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+    }
 
-.price-card .card:hover{
-    transform: scale(1.05);
-}
+    .subscribe-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        max-width: 640px;
+        margin: 0 auto;
+    }
 
-.price-card .card p {
-    text-align:  left;
-    font-size: 16px;
-}
+    .subscribe-content .eyebrow {
+        display: inline-block;
+        color: #93c5fd;
+        background: rgba(37, 99, 235, 0.12);
+        border: 1px solid rgba(37, 99, 235, 0.35);
+        padding: 6px 16px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        margin-bottom: 24px;
+    }
 
-.price-card .card h3 {
-    font-size: 55px;
-}
+    .subscribe-content h2 {
+        color: #ffffff;
+        font-size: 42px;
+        font-weight: 800;
+        margin-bottom: 16px;
+        line-height: 1.2;
+    }
 
-.price-card .card hr {
-    margin-top: 12px;
-}
+    .subscribe-content h2 span {
+        background: linear-gradient(90deg, #60a5fa, #a78bfa);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
 
-.price-card .card ul {
-    margin: 15px 0 15px 20px;
-    display: grid;
-    gap: 20px;
-}
+    .subscribe-content p {
+        color: #9ca3af;
+        font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 36px;
+    }
 
-.price-card .card li {
-    font-size: 20px;
-}
+    .subscribe-form {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        padding: 8px;
+        border-radius: 12px;
+        max-width: 480px;
+        margin: 0 auto;
+        transition: border-color 0.3s, box-shadow 0.3s;
+    }
 
-.price-card .card button {
-    background-color: #fff;
-    color: #2563EB;
-    width: 100%;
-    padding: 15px 0;
-    border: none;
-    outline: 0.5px solid #99bed1;
-    border-radius: 4px;
-}
+    .subscribe-form:hover,
+    .subscribe-form:focus-within {
+        border-color: rgba(96, 165, 250, 0.6);
+        box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15), 0 0 30px rgba(37, 99, 235, 0.15);
+    }
 
-.price-card .card button:hover {
-    background-color: #e8e8e9;
-}
+    .subscribe-form input {
+        flex: 1;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: #ffffff;
+        font-size: 15px;
+        padding: 12px 14px;
+    }
 
-.price-card .highlight-card {
-    background-color: #0D1B2A;
-}
+    .subscribe-form input::placeholder {
+        color: #6b7280;
+    }
 
-.price-card .highlight-card p,
-.price-card .highlight-card h3,
-.price-card .highlight-card small,
-.price-card .highlight-card li {
-    color: white;
-}
+    .subscribe-form button {
+        background: linear-gradient(90deg, #2563eb, #4f46e5);
+        color: #ffffff;
+        border: none;
+        padding: 14px 26px;
+        border-radius: 8px;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        white-space: nowrap;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
 
-.price-card .highlight-card button {
-    background-color: #2563EB;
-    color: white;
-    outline: none;
-}
+    .subscribe-form button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
+    }
 
-.price-card .highlight-card button:hover {
-    background-color: #2854b4;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-  /* ===== AI section Subscribe Section ===== */
-  .subscribe-section {
-    position: relative;
-    background: #0D1B2A;
-    padding: 100px 0;
-    overflow: hidden;
-    isolation: isolate;
-  }
-
-  .subscribe-section::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image:
-      linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-    background-size: 40px 40px;
-    mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
-    z-index: 0;
-  }
-
-  #particle-canvas {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-  }
-
-  .subscribe-content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    max-width: 640px;
-    margin: 0 auto;
-  }
-
-  .subscribe-content .eyebrow {
-    display: inline-block;
-    color: #93c5fd;
-    background: rgba(37, 99, 235, 0.12);
-    border: 1px solid rgba(37, 99, 235, 0.35);
-    padding: 6px 16px;
-    border-radius: 999px;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    margin-bottom: 24px;
-  }
-
-  .subscribe-content h2 {
-    color: #ffffff;
-    font-size: 42px;
-    font-weight: 800;
-    margin-bottom: 16px;
-    line-height: 1.2;
-  }
-
-  .subscribe-content h2 span {
-    background: linear-gradient(90deg, #60a5fa, #a78bfa);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-
-  .subscribe-content p {
-    color: #9ca3af;
-    font-size: 16px;
-    line-height: 1.7;
-    margin-bottom: 36px;
-  }
-
-  .subscribe-form {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    padding: 8px;
-    border-radius: 12px;
-    max-width: 480px;
-    margin: 0 auto;
-    transition: border-color 0.3s, box-shadow 0.3s;
-  }
-
-  .subscribe-form:hover,
-  .subscribe-form:focus-within {
-    border-color: rgba(96, 165, 250, 0.6);
-    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15), 0 0 30px rgba(37, 99, 235, 0.15);
-  }
-
-  .subscribe-form input {
-    flex: 1;
-    background: transparent;
-    border: none;
-    outline: none;
-    color: #ffffff;
-    font-size: 15px;
-    padding: 12px 14px;
-  }
-
-  .subscribe-form input::placeholder {
-    color: #6b7280;
-  }
-
-  .subscribe-form button {
-    background: linear-gradient(90deg, #2563eb, #4f46e5);
-    color: #ffffff;
-    border: none;
-    padding: 14px 26px;
-    border-radius: 8px;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
-    white-space: nowrap;
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-
-  .subscribe-form button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
-  }
-
-  .subscribe-note {
-    margin-top: 18px;
-    font-size: 13px;
-    color: #6b7280;
-  }
+    .subscribe-note {
+        margin-top: 18px;
+        font-size: 13px;
+        color: #6b7280;
+    }
 
 
+
+
+
+
+
+    
 
 
 
 
 
     .footer-section {
-        padding: 25px 0;
+        background-color: #ffffff;
         border-top: 1px solid #e5e7eb;
+        padding: 25px 0;
     }
 
     .footer-logo img {
@@ -458,3 +465,54 @@
         gap: 28px;
         list-style: none;
     }
+
+    .footer-menu ul li a {
+        text-decoration: none;
+        color: #4b5563;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .footer-menu ul li a:hover {
+        color: #111827;
+    }
+
+    .social-icons {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .social-icons a {
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: 0.5px solid #cfcccc;
+        border-radius: 50%;
+        color: #111827;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .social-icons a:hover {
+        background-color: #2563EB;
+        outline-color: #2563EB;
+        color: #ffffff;
+    }
+
+    .footer-divider {
+        border: none;
+        border-top: 1px solid #e5e7eb;
+        margin: 25px 0 20px 0;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        color: #9ca3af;
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+
+
