@@ -145,4 +145,189 @@
 
 
 
+    .meet-text h2 {
+        font-size: 40px;
+        padding: 30px 0;
+        text-align: center;
+        margin: 20px 0
+    }
+    
+
+    .card-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        row-gap: 35px;
+        column-gap: 35px;
+    }
+
+    .card-section .card-body {
+        border: 0.5px solid #cfcccc;
+        border-radius: 12px;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+    .card-section .card-body:hover {
+        transform: scale(1.03);
+    }
+
+    .card-section .card-body img {
+        width: 100%;
+        display: block;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .card-section .card-body small {
+        color: #2563EB;
+        margin: 8px;
+        display: block;
+    }
+
+    .card-section .card-body h3,
+    .card-section .card-body .p-2 {
+        margin: 8px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.price-section {
+    margin: 80px auto 80px auto;
+}
+
+.price-section h2 {
+    
+    text-align: center;
+    font-size: 40px;
+}
+
+.price-section p {
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.price-card {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+}
+
+.price-card .card {
+    outline: 1px solid #cfcccc;
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.price-card .card:hover{
+    transform: scale(1.05);
+}
+
+.price-card .card p {
+    text-align:  left;
+    font-size: 16px;
+}
+
+.price-card .card h3 {
+    font-size: 55px;
+}
+
+.price-card .card hr {
+    margin-top: 12px;
+}
+
+.price-card .card ul {
+    margin: 15px 0 15px 20px;
+    display: grid;
+    gap: 20px;
+}
+
+.price-card .card li {
+    font-size: 20px;
+}
+
+.price-card .card button {
+    background-color: #fff;
+    color: #2563EB;
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    outline: 0.5px solid #99bed1;
+    border-radius: 4px;
+}
+
+.price-card .card button:hover {
+    background-color: #e8e8e9;
+}
+
+.price-card .highlight-card {
+    background-color: #0D1B2A;
+}
+
+.price-card .highlight-card p,
+.price-card .highlight-card h3,
+.price-card .highlight-card small,
+.price-card .highlight-card li {
+    color: white;
+}
+
+.price-card .highlight-card button {
+    background-color: #2563EB;
+    color: white;
+    outline: none;
+}
+
+.price-card .highlight-card button:hover {
+    background-color: #2854b4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
