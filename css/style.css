@@ -435,3 +435,26 @@
     font-size: 13px;
     color: #6b7280;
   }
+
+
+
+
+
+
+
+    .footer-section {
+        padding: 25px 0;
+        border-top: 1px solid #e5e7eb;
+    }
+
+    .footer-logo img {
+        height: 36px;
+        display: block;
+    }
+
+    .footer-menu ul {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        list-style: none;
+    }
